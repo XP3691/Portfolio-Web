@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+
+}
+
+.cv {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: "Clear Sans", sans-serif;
+  color: #fff;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-me p {
+  flex: 1;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+
+/* --- Header --- */
+header {
+  background: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Intro --- */
+.intro {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* --- Gallery --- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 2rem;
+  max-width: 1800px;
+  margin: auto;
+}
+
+.gallery-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.gallery-item1 {
+  
+  background: #0d231d;
+ 
+}
+
+.gallery-item2 {
+  background: #220f4b;
+ 
+}
+
+.gallery-item3 {
+  background: #121212;
+ 
+}
+
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-item .info {
+  padding: 1rem;
+}
+
+/* --- Project Details Section --- */
+#project-details {
+  margin-top: 3rem;
+}
+
+/* Full-width project sections */
+.project {
+  width: 100%;
+  border-radius: 0;             /* No rounded corners */
+   box-shadow: 0 10px 30px rgba(0,0,0,0.3);  /* Subtle shadow */
+  padding: 4rem 10vw;           /* Add space on the sides (10% viewport width) */
+  margin: 0;
+}
+
+.projectdes1 {
+  background-color: #0d231d;
+  background-image: url("images/Caustics2.png");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
+  opacity: 0.98;
+}
+.projectdes2 {
+  background-color: #220f4b;
+  background-image: url("images/vaporpattern.jpg");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
+  opacity: 0.78;
+}
+
+
+/* Inner content layout */
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.project-content img {
+  flex: 1 1 300px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 0; /* Square edges */
+}
+
+.project-content .text {
+  flex: 2 1 300px;
+}
+
+.project-title {
+  font-size: 3rem;        /* Large size */
+  font-weight: 700;        /* Bold */
+  text-align: center;      /* Centered on the page */
+  margin-bottom: 2rem;     /* Space between title and image */
+  color: #ffffff;          /* Change if needed */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Optional depth */
+}
+
+.fullwidth-image {
+  position: relative;
+  width: 80vw;
+  margin: 0 auto;
+   perspective: 1px;
+  overflow: hidden;
+  
+}
+
+.fullwidth-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+   transform: translateZ(0);
+  will-change: transform;
+}
+
+.fullwidth-image img:hover {
+  transform: scale(1.02); /* very subtle zoom */
+}
+
+
+.fullwidth-image .image-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  font-size: 2rem;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center images in the row */
+  gap: 0.5rem;               /* space between images */
+  margin-bottom: 2rem;
+}
+
+.project-images img {
+  width: 600px;            /* or any size you want */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Centered text row */
+.project-text {
+	
+  text-align: center;
+  max-width: 800px;
+  margin: 2rem auto;        /* center horizontally with spacing */
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.project-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1rem 7vw;
+}
+
+.project-row img {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0; /* keep square corners */
+}
+
+.text-box {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.05); /* subtle contrast box */
+  padding: 1.5rem;
+  border-radius: 0; /* no rounding */
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Flip image/text sides every second row */
+.project-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Stack vertically on mobile */
+@media (max-width: 900px) {
+  .project-row {
+    flex-direction: column;
+    padding: 1rem 4vw;
+  }
+
+  .project-row img {
+    width: 100%;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+}
+
+
+
+
+/* --- Footer --- */
+footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 0;
+}

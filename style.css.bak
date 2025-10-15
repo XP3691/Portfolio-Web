@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+
+}
+
+/* --- Header --- */
+header {
+  background: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Intro --- */
+.intro {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* --- Gallery --- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 2rem;
+  max-width: 1800px;
+  margin: auto;
+}
+
+.gallery-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.gallery-item1 {
+  
+  background: #0d231d;
+ 
+}
+
+.gallery-item2 {
+  background: #220f4b;
+ 
+}
+
+.gallery-item3 {
+  background: #121212;
+ 
+}
+
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-item .info {
+  padding: 1rem;
+}
+
+/* --- Project Details Section --- */
+#project-details {
+  margin-top: 3rem;
+}
+
+/* Full-width project sections */
+.project {
+  width: 100%;
+  border-radius: 0;             /* No rounded corners */
+   box-shadow: 0 10px 30px rgba(0,0,0,0.3);  /* Subtle shadow */
+  padding: 4rem 10vw;           /* Add space on the sides (10% viewport width) */
+  margin: 0;
+}
+
+.projectdes1 {
+  background: #0d231d;
+}
+.projectdes2 {
+  background: #220f4b;
+}
+
+
+/* Inner content layout */
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.project-content img {
+  flex: 1 1 300px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 0; /* Square edges */
+}
+
+.project-content .text {
+  flex: 2 1 300px;
+}
+
+.project-title {
+  font-size: 3rem;        /* Large size */
+  font-weight: 700;        /* Bold */
+  text-align: center;      /* Centered on the page */
+  margin-bottom: 2rem;     /* Space between title and image */
+  color: #ffffff;          /* Change if needed */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Optional depth */
+}
+
+.fullwidth-image {
+  position: relative;
+  width: 80vw;
+  margin: 0 auto;
+   perspective: 1px;
+  overflow: hidden;
+  
+}
+
+.fullwidth-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+   transform: translateZ(0);
+  will-change: transform;
+}
+
+.fullwidth-image img:hover {
+  transform: scale(1.02); /* very subtle zoom */
+}
+
+
+.fullwidth-image .image-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  font-size: 2rem;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center images in the row */
+  gap: 0.5rem;               /* space between images */
+  margin-bottom: 2rem;
+}
+
+.project-images img {
+  width: 600px;            /* or any size you want */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Centered text row */
+.project-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 2rem auto;        /* center horizontally with spacing */
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+
+/* --- Footer --- */
+footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 0;
+}

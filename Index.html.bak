@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>3D Design Portfolio</h1>
+    <nav>
+      <a href="index.html">Portfolio</a>
+      <a href="cv.html">CV</a>
+	  <a href="contact.html">Cntact</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h1>Welcome!</h1>
+    <p>Hi, I’m Tristan Reinbacherm a third year Multimedia and Technologies student at KdG. Here’s a collection of my works — click a project to learn more below.</p>
+  </section>
+
+  <!-- Top gallery -->
+  <section class="gallery">
+    <div class="gallery-item gallery-item1" data-target="project1">
+      <img src="images/CarRenderColor.png" alt="Project 1" />
+      <div class="info">
+        <h3>3D Modeling</h3>
+        <p>Render of a Sunken car. Exercise in topology and lighting.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item gallery-item2" data-target="project2">
+      <img src="images/GDCover.png" alt="Project 2" />
+      <div class="info">
+        <h3>Game Design 2nd Year.</h3>
+        <p>Game Design assignemt, to create a fully working demo in Unity</p>
+      </div>
+    </div>
+	
+	<div class="gallery-item gallery-item3" data-target="project2">
+      <img src="images/CCCover.png" alt="Project 3" />
+      <div class="info">
+        <h3>Coding Challenge Year 1.</h3>
+        <p>Create a Text based game using c#.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed project sections -->
+  <section id="project-details">
+    <div class="project projectdes1" id="project1">
+	
+	 <h1 class="project-title">3D Modeling Project: Sunken Car</h1>
+	  <br>
+	    <div class="fullwidth-image">
+      <img src="images/CarRenderColor.png" alt="Full render of the sunken car">
+	   <h1 class="image-title">3D Modeling Practice Topology and Lighting</h1>
+	   </div>
+	   <div class="fullwidth-image">
+      <img src="images/CarWireframe.png" alt="Full render of the sunken car">
+	   <h1 class="image-title">Wireframe View</h1>
+	   </div>
+	   <br>
+	   <br>
+	   <br>
+	   
+	   <div class="project-text">
+	   <h2><p>Step 1: Modeling The Car</p></h2>
+    <p>In the beginning, this project was all about learning how to properly model vehicles. <br> 
+	After some trial and error, I finally landed on this Dodge Challenger Hellcat, my fourth car model.<br>
+	To start i picked out a blueprint and set it up in my scene so all the orthographic <br>
+	views are properly lined up.</p>
+  </div>
+
+  
+  <div class="project-images">
+    <img src="images/blueprint.jpg" alt="Render 1">
+    <img src="images/blueprintSetup.png" alt="Render 2">
+  </div>
+
+  
+  <div class="project-text">
+    <p>Next I started work on a low poly version of the car. After i was done i applied subdivision and smooth modifiers.</p>
+  </div>
+   <div class="fullwidth-image">
+    <img src="images/CarImageNoSmooth.png" alt="Render 1">
+	<h1 class="image-title">Low poly model no smoothing or subdiv.</h1>
+  </div>
+  
+  <div class="fullwidth-image">
+    <img src="images/CarModelSubDiv.png" alt="Render 1">
+	<h1 class="image-title">Model after cleanup subdiv. and smooth are applied.</h1>
+  </div>
+   <div class="project-text">
+   <p>Lastly I started working on all the car components that had to be sepparately attached, <br> 
+   i aslo turend the single mesh into multiple car panels to give it a more detailed and complex look<br>
+   (this part also includes all details on the side of the car).</p>
+  </div>
+  
+  <div class="project-images">
+    <img src="images/Detail1.png" alt="Render 1">
+    <img src="images/Detail2.png" alt="Render 2">
+	<img src="images/Detail3.png" alt="Render 3">
+	<img src="images/Detail4.png" alt="Render 4">
+  </div> 
+   
+   <div class="project-text">
+	   <h2><p>Step 2: Making the scene</p></h2>
+    <p>After Finishing the Vehicle i wanted to create a proper scene to showcase the model. I am presonally <br>
+	a huge fan of surreal scenes, especially the ones that include a mundane item. After some trial i <br>
+	landed on the concept of an underwater scene with the car floating in the middle.</p>
+	   
+	   
+  </div>
+  
+  <div class="fullwidth-image">
+      <img src="images/SceneNoLight.png" alt="Scene Layout using particle system for seaweed and rocks.">
+	   <h1 class="image-title">Scene Layout using particle system for seaweed and rocks.</h1>
+	   </div>
+	   <div class="fullwidth-image">
+      <img src="images/SceneWAsset.png" alt="Scene Layout using particle system for seaweed and rocks.">
+	   <h1 class="image-title">Adding all the scene assets (fish and jellyfish are from BlenderKit).</h1>
+	   </div>
+	   
+	   <div class="project-text">
+	   <h2><p>Step 3: Volumetrics & Lighting</p></h2>
+    <p>Once Everything was put in place it was time to add lighting and mood to the scene, <br>
+	as the scene takes place underwater it required caustics for the lighting i achieved <br>
+	this by creating a transparent plane with a voronoi and displacement map on it.<br>
+	For the lighting i used a spotlight with extremely high luminosity to simulate <br>
+	sunlight and to create the foggy water effect i used a volumetric modifier on a texture </p>
+  </div>
+     
+  <div class="fullwidth-image">
+      <img src="images/Light.png" alt="Scene Layout using particle system for seaweed and rocks.">
+	   <h1 class="image-title">Lighting and Plane</h1>
+	   </div>
+	   <div class="fullwidth-image">
+      <img src="images/Volumetrics.png" alt="Scene Layout using particle system for seaweed and rocks.">
+	   <h1 class="image-title">Volumetric fog</h1>
+	   </div>
+	   <br>
+	 <br>
+	   <div class="project-images">
+    <img src="images/Volume.png" alt="Render 1">
+    <img src="images/TextureMap.png" alt="Render 2">
+     </div> 
+  
+  
+  </div>
+   
+  
+     
+	
+	 
+  
+
+    <div class="project projectdes2" id="project2">
+      
+	  <h1 class="project-title">Second Year Game Design Project</h1>
+	  
+	  <div class="fullwidth-image">
+      <img src="images/GDBig3.png" alt="Full render of the sunken car">
+	   <h1 class="image-title">Assignemnt to Design a game in unity.</h1>
+	   </div>
+	   
+	   <div class="fullwidth-image">
+      <img src="images/GDBig1.png" alt="Full render of the sunken car">
+	   <h1 class="image-title"></h1>
+	   </div>
+	   
+	   <div class="fullwidth-image">
+      <img src="images/GDBig2.png" alt="Full render of the sunken car">
+	   <h1 class="image-title"></h1>
+	   </div>
+	   
+	   <div class="project-text">
+	   <h2><p>Part 1 The Gameplay. </p></h2>
+    <p>The Assignment consisted of creating a game that showcased our understadning of both <br> 
+	visible and invisible game design components, for this i decided to create a 3d movement <br> 
+	platformer with a look that reminds the player of the PsX era games.</p>
+  </div>
+	   
+      <h2>Movement Tech: Wallrunning</h2>
+      <div class="project-content">
+        <img src="images/WallrunningUnlock.gif" alt="Detailed image 1" />
+        <div class="text-box">
+          <p>The Player is taught to interact very early on, once they reach this part of the sublevel<br>
+		  they wont be able to progress without unlocking the wallrunning ability by ineracting with the<br>
+		  computer in front, in case they try to continue the walls do not have collision and the player<br>
+		  will fall through.</p>
+        </div>
+		</div>
+		<br> 
+		<br> 
+		<div class="project-content">
+        <img src="images/Wallrunning.gif" alt="Detailed image 1" />
+        <div class="text-box">
+          <p>Once Unlocked, The Player Will be able to run on the Yellow colored walls around <br>
+		  the world, this allows the player to explore higher up areas on the map. </p>
+        </div>
+		</div>
+		<br> 
+		<br> 
+		<h2>Movement Tech: Grappling</h2>
+      <div class="project-content">
+        <img src="images/WallrunningUnlock.gif" alt="Detailed image 1" />
+        <div class="text-box">
+          <p>The level is designed in a way that they will most likely find the wallrunning sublevel first <br>
+		  and if they do not they will run into a roadblock regardless as they lack the ability to interact<br>
+		  with the yellow walls. Once this is completed however they will most likely have collected at least <br>
+		  50 CD collectibles which allows them to buy the grappling block at the ATM which then allows them to <br>
+		  grapple on purple BLocks </p>
+        </div>
+		</div>
+		<br> 
+		<br> 
+		<div class="project-content">
+        <img src="images/Wallrunning.gif" alt="Detailed image 1" />
+        <div class="text-box">
+          <p>Once Unlocked, The Player Will be able to run on the Yellow colored walls around <br>
+		  the world, this allows the player to explore higher up areas on the map. </p>
+        </div>
+		</div>
+		
+      </div>
+  
+  
+  
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Tristan Reinbacher — All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll when clicking gallery items
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const targetId = item.getAttribute('data-target');
+        const target = document.getElementById(targetId);
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
+</html>
