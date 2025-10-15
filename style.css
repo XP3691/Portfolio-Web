@@ -101,6 +101,10 @@ nav a:hover {
   background: #121212;
  
 }
+.gallery-item4 {
+  background: #2A6478;
+ 
+}
 
 
 .gallery-item:hover {
@@ -150,6 +154,28 @@ nav a:hover {
   
    background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
   opacity: 0.78;
+}
+
+.projectdes3 {
+  background-color: #0f0f0f;
+  background-image: url("images/Pattern3.jpg");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
+  opacity: 0.98;
+}
+
+.projectdes4 {
+  background-color: #000000;
+  background-image: url("images/vaporpattern.jpg");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
+  opacity: 1;
 }
 
 
@@ -256,6 +282,11 @@ nav a:hover {
   border-radius: 0; /* keep square corners */
 }
 
+.project-row iframe {
+  width: 40%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
 .text-box {
   flex: 1;
   background-color: rgba(255, 255, 255, 0.05); /* subtle contrast box */

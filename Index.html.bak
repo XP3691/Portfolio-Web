@@ -12,14 +12,15 @@
     <nav>
       <a href="index.html">Portfolio</a>
       <a href="cv.html">CV</a>
-	  <a href="contact.html">Cntact</a>
+	  <a href="contact.html">Contact</a>
     </nav>
   </header>
-
-  <section class="intro">
-    <h1>Welcome!</h1>
+<section class="cv">
+<div class="about-me">
+    <img src="images/Profileimage.jpg" alt="Your Name" class="profile-pic">
     <p>Hi, I’m Tristan Reinbacherm a third year Multimedia and Technologies student at KdG. Here’s a collection of my works — click a project to learn more below.</p>
-  </section>
+  </div>
+</section>
 
   <!-- Top gallery -->
   <section class="gallery">
@@ -39,11 +40,19 @@
       </div>
     </div>
 	
-	<div class="gallery-item gallery-item3" data-target="project2">
+	<div class="gallery-item gallery-item3" data-target="project3">
       <img src="images/CCCover.png" alt="Project 3" />
       <div class="info">
         <h3>Coding Challenge Year 1.</h3>
         <p>Create a Text based game using c#.</p>
+      </div>
+    </div>
+	
+	<div class="gallery-item gallery-item4" data-target="project4">
+      <img src="images/manta.png" alt="Project 4" />
+      <div class="info">
+        <h3>Miscellaneous Projects</h3>
+        <p>Projects i have made in the last ocuple of years</p>
       </div>
     </div>
   </section>
@@ -151,12 +160,6 @@
   
   </div>
    
-  
-     
-	
-	 
-  
-
     <div class="project projectdes2" id="project2">
       
 	  <h1 class="project-title">Second Year Game Design Project</h1>
@@ -184,8 +187,10 @@
   </div>
 	   
       <h2>Movement Tech: Wallrunning</h2>
-      <div class="project-content">
+      <div class="project-row">
+
         <img src="images/WallrunningUnlock.gif" alt="Detailed image 1" />
+
         <div class="text-box">
           <p>The Player is taught to interact very early on, once they reach this part of the sublevel<br>
 		  they wont be able to progress without unlocking the wallrunning ability by ineracting with the<br>
@@ -195,8 +200,10 @@
 		</div>
 		<br> 
 		<br> 
-		<div class="project-content">
+		<div class="project-row">
+		
         <img src="images/Wallrunning.gif" alt="Detailed image 1" />
+
         <div class="text-box">
           <p>Once Unlocked, The Player Will be able to run on the Yellow colored walls around <br>
 		  the world, this allows the player to explore higher up areas on the map. </p>
@@ -205,8 +212,10 @@
 		<br> 
 		<br> 
 		<h2>Movement Tech: Grappling</h2>
-      <div class="project-content">
-        <img src="images/WallrunningUnlock.gif" alt="Detailed image 1" />
+      <div class="project-row">
+	  
+        <img src="images/GrappleUnlock.gif" alt="Detailed image 1" />
+		
         <div class="text-box">
           <p>The level is designed in a way that they will most likely find the wallrunning sublevel first <br>
 		  and if they do not they will run into a roadblock regardless as they lack the ability to interact<br>
@@ -217,18 +226,192 @@
 		</div>
 		<br> 
 		<br> 
-		<div class="project-content">
-        <img src="images/Wallrunning.gif" alt="Detailed image 1" />
+		<div class="project-row">
+	
+        <img src="images/Grapple.gif" alt="Detailed image 1" />
+
         <div class="text-box">
           <p>Once Unlocked, The Player Will be able to run on the Yellow colored walls around <br>
 		  the world, this allows the player to explore higher up areas on the map. </p>
         </div>
 		</div>
 		
+		<div class="fullwidth-image">
+      <img src="images/GDBig4.png" alt="Full render of the sunken car">
+	   <h1 class="image-title">Example of required unlock to proceed.</h1>
+	   </div>
+	   <div class="project-text">
+	   <h2><p>Part 2 Level Design. </p></h2>
+    <p>The level is structured in a semi linear way, the collectibles push the player in a certain <br>
+	direction but on closer inspection one can find small hidden spots, and extra rewards. As mentioned <br>
+	before the layout leads the player to normally find the entrance to the Sublevel (platforming section)<br>
+	first, in case they dont there is only limited spaces to visit and the circular map brings the player <br>
+	back to the sublevel at some point in case they skip it.</p>
+  </div>
+  
+  <div class="fullwidth-image">
+      <img src="images/GDBig5.png" alt="Full render of the sunken car">
+	   <h1 class="image-title"></h1>
+	   </div>
+	   
+	   <div class="project-row">
+	  
+        <img src="images/ObjectiveVis.png" alt="Detailed image 1" />
+		
+        <div class="text-box">
+          <p>All landmarks are visible from the spawnpoint encouraging the player to explore and interact with the map. </p>
+        </div>
+		</div>
+		<br> 
+		<br> 
+		<div class="project-row">
+	  
+        <img src="images/Arrows.png" alt="Detailed image 1" />
+		
+        <div class="text-box">
+          <p>Arrows help guiding the player toi the right path and can even explain to the player what they have to do at a given moment (in the firsat wallrunning section they help as a jumping point if the player struggles with timing.) </p>
+        </div>
+		</div>
       </div>
+	  
+	<div class="project projectdes3" id="project3">
+	
+	  
+      
+	  <h1 class="project-title">First Year Coding Challenge</h1>
+	  
+	  <div class="fullwidth-image">
+      <img src="images/CCBig1.gif" alt="Full render of the sunken car">
+	   <h1 class="image-title">Assignment to code a text base game.</h1>
+	   </div>
+	   
+	   <div class="fullwidth-image">
+      <img src="images/CCBig2.png" alt="Full render of the sunken car">
+	   <h1 class="image-title">Colored Text to guide player </h1>
+	   </div>
+	   
+	    <div class="project-row">
+	  
+        <img src="images/Hallway1.gif" alt="Detailed image 1" />
+		
+        <div class="text-box">
+          <p>Images for scenes are created in blender, then rendered as images and turned into multi-frame gifs that are played when a valid text prompt is entered.</p>
+        </div>
+		</div>
+		<br> 
+		<br> 
+		 <div class="project-row">
+	  
+        <img src="images/Death.gif" alt="Detailed image 1" />
+		
+        <div class="text-box">
+          <p>The objective of the game is very simple interact with your surroundings untill you collect all the items and then use those to escape. Depending on the order you do the tasks in you can either get a good or bad ending. </p>
+        </div>
+		</div>
+		<br> 
+		<br> 
+		
+		<div class="project-text">
+	   <h2><p>The Inventory Items</p></h2>
+    <p>The items themselves were rendered in 3D in blender and then traced over in Inkscape to give it the drawn look, this was a required restriction for the assignment. </p>
+	   
+	   
+  </div>
+		<div class="project-images">
+    <img src="images/Item1.png" alt="Render 1">
+    <img src="images/Item2.png" alt="Render 2">
+	<img src="images/Item3.png" alt="Render 3">
+	<img src="images/Item4.png" alt="Render 4">
+	<img src="images/Item5.png" alt="Render 5">
+  </div> 
   
-  
-  
+   <div class="project-row">
+	  
+        <img src="images/MetisRoomRender.png" alt="Detailed image 1" />
+		
+        <div class="text-box">
+          <p>Here is a preview image of the 3D modeled scene before the wireframe effect is aplied in postprocessing.</p>
+        </div>
+		</div>
+		<br> 
+		<br> 
+        <div class="project-row">
+	  
+        <img src="images/Metis.png" alt="Detailed image 1" />
+		
+        <div class="text-box">
+          <p>And The final render of the scene</p>
+        </div>
+		</div>
+       </div>
+     
+	<div class="project projectdes4" id="project4">
+	
+	 <h1 class="project-title">Miscellaneous Projects</h1>
+	 <div class="project-row">
+	  
+        <img src="images/manta.png" alt="Detailed image 1" />
+		
+        <div class="text-box">
+          <p>This is an older practice project on modeling animals and combining it with some of blendcers modifiers. Specifically It uses a Subdiv. modifier with two decimate modifiers to create the smooth rounded lines.</p>
+        </div>
+		</div>
+		<br> 
+		<br> 
+        <div class="project-row">
+	  
+        <img src="images/Hand.gif" alt="Detailed image 1" />
+		
+        <div class="text-box">
+          <p>A Practie project for camera movement and Geometry nodes. In this case an empty comes through the mesh and randomly displaces faces along the objects X and Y axis.</p>
+        </div>
+		</div>
+		<div class="project-row">
+	  
+        <iframe 
+        src="https://www.youtube.com/embed/SoFGKLDwg_M" 
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+        </iframe>
+		
+        <div class="text-box">
+          <p>This was the final assignment for our 2nd Year motion graphics class, it is a combination of all assignments done in class (each one of them focusing on a different aspect of AfterEffects).</p>
+        </div>
+		</div>
+		<br> 
+		<br> 
+        <div class="project-row">
+	  
+        <img src="images/flamingSword.gif" alt="Detailed image 1" />
+		
+        <div class="text-box">
+          <p>One of the first projects i practiced, creating a flaming sword and putting it in an interesting scene, the lighting uses the ame trick as the Underwater Caustics.</p>
+        </div>
+		</div>
+		<br> 
+		<br> 
+		 <div class="project-row">
+	  
+        <img src="images/HandRig.png" alt="Detailed image 1" />
+		
+        <div class="text-box">
+          <p>This was a practice exercise in Rigging and Proper topology, The floating bones control the movement of the fingers similar to an IK the actual finger bones copy the rotation of the one below it and the last in the line rotates according to the Control bones Height.</p>
+        </div>
+		</div>
+        <br> 
+		<br> 
+		<div class="project-row">
+	  
+        <img src="images/VaporGirl cover.png" alt="Detailed image 1" />
+		
+        <div class="text-box">
+          <p>This Project is a practice on the Low Poly style used in PSX Games, it was also a practice in propper character rigging.</p>
+        </div>
+		</div>
+		<br> 
+		<br> 
       </div>
     </div>
   </section>

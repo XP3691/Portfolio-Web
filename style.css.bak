@@ -10,6 +10,38 @@ body {
 
 }
 
+.cv {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: "Clear Sans", sans-serif;
+  color: #fff;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-me p {
+  flex: 1;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+
 /* --- Header --- */
 header {
   background: #111;
@@ -69,6 +101,10 @@ nav a:hover {
   background: #121212;
  
 }
+.gallery-item4 {
+  background: #2A6478;
+ 
+}
 
 
 .gallery-item:hover {
@@ -100,10 +136,46 @@ nav a:hover {
 }
 
 .projectdes1 {
-  background: #0d231d;
+  background-color: #0d231d;
+  background-image: url("images/Caustics2.png");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
+  opacity: 0.98;
 }
 .projectdes2 {
-  background: #220f4b;
+  background-color: #220f4b;
+  background-image: url("images/vaporpattern.jpg");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
+  opacity: 0.78;
+}
+
+.projectdes3 {
+  background-color: #0f0f0f;
+  background-image: url("images/Pattern3.jpg");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
+  opacity: 0.98;
+}
+
+.projectdes4 {
+  background-color: #000000;
+  background-image: url("images/vaporpattern.jpg");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
+  opacity: 1;
 }
 
 
@@ -184,6 +256,7 @@ nav a:hover {
 
 /* Centered text row */
 .project-text {
+	
   text-align: center;
   max-width: 800px;
   margin: 2rem auto;        /* center horizontally with spacing */
@@ -192,6 +265,55 @@ nav a:hover {
   line-height: 1.6;
   color: #ffffff;
 }
+
+.project-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1rem 7vw;
+}
+
+.project-row img {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0; /* keep square corners */
+}
+
+.text-box {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.05); /* subtle contrast box */
+  padding: 1.5rem;
+  border-radius: 0; /* no rounding */
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Flip image/text sides every second row */
+.project-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Stack vertically on mobile */
+@media (max-width: 900px) {
+  .project-row {
+    flex-direction: column;
+    padding: 1rem 4vw;
+  }
+
+  .project-row img {
+    width: 100%;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+}
+
+
 
 
 /* --- Footer --- */

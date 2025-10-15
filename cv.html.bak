@@ -10,34 +10,68 @@
   <header>
     <h1>My CV</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="cv.html">My CV</a>
+      <a href="index.html">Portfolio</a>
+      <a href="cv.html">CV</a>
+	  <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <section class="cv">
-    <h2>About Me</h2>
-    <p>Write a short professional summary here.</p>
+  <h2>About Me</h2>
+  <div class="about-me">
+    <img src="images/Profileimage.jpg" alt="Your Name" class="profile-pic">
+    <p> 
+      Current 22yo. Multimedia and Creative technologies student at Karel de Grote Hogeschool originating from Spain, with developing skills in 3D modeling and Game design and a background 
+	  in hairdressing and styling both in Spain and Germany, currently also working in Landscaping in Antwerp. 
+      <br>
+      <br>I would describe myself as a hard worker and a fast and willing learner with a multitude of fundamental skills for a multitude of tech related subjects.
+    </p>
+  </div>
 
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Job Title</strong> — Company (Year - Year)
-        <p>Describe your responsibilities or achievements here.</p>
-      </li>
-      <li><strong>Another Role</strong> — Company (Year - Year)</li>
-    </ul>
+  <h2>Experience</h2>
+  <ul>
+    <li><strong>Hair stylist</strong> — Peluqueria Estefan (2021 - 2023)
+      <p>Hair stylist and colorist apprentice at Peluqueria Estefan in Palma</p>
+    </li>
+    <li><strong>Hair stylist</strong> — Glanzleistung  (2023 - 2023)
+	 <p>Hair stylist and colorist apprenticeship with erasmus for 3 months at Glanzleistung in Kiel.</p>
+	 </li>
+	 <li><strong>Landscaper</strong> — Hexa Projects  (2023 - Now)
+	 <p>Part time landscaper at Hexa TuinWerken in Antwerp.</p>
+	 </li>
+  </ul>
 
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Degree</strong> — School (Year)</li>
-    </ul>
+  <h2>Education</h2>
+  <ul>
+    <li><strong>Multimedia and Creative Technologies </strong> — KdG Antwerp (2023-Now)
+		 <p>Current 3rd Year MCT student at KdG in Antwerp</p>
+	</li>
+  </ul>
 
-    <h2>Skills</h2>
-    <p>List your key skills: design, coding, 3D art, etc.</p>
-  </section>
+  <h2>Skills</h2>
+  <p>
+ Intermediate 3D modeling skills (Blender)<br>
+ Character/Object Rigging<br>
+ VFX and motion tracking <br>
+ UV Editing<br>
+ Texture Design<br>
+ Game Design in engine (Unity)<br>
+ Begginer coding skills (C#)(html)(Css)(Java)<br>
+ Begginer Adobe AE skills<br>
+ Webdesign<br>
+ Figma<br>
+</p>
 
-  <footer>
-    <p>© 2025 Your Name — All rights reserved.</p>
-  </footer>
+<h2>Languages</h2>
+  <p>
+English: C2 <br>
+German: C2 <br>
+Spanish: C2 <br>
+Catalan: C1 <br>
+</p>
+
+
+</section>
+
 </body>
 </html>
