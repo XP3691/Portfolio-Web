@@ -5,10 +5,9 @@
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #000;
-  color: #fff;
-  line-height: 1.6;
-  overflow-x: hidden;
+  background-color: #000000;
+  color: #ffffff;
+
 }
 
 .cv {
@@ -19,7 +18,6 @@ body {
   color: #fff;
 }
 
-/* --- About Me --- */
 .about-me {
   display: flex;
   align-items: center;
@@ -39,7 +37,8 @@ body {
 
 .about-me p {
   flex: 1;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  font-size: 1.1rem;
 }
 
 
@@ -51,46 +50,30 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-header h1 {
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  margin: 0;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 nav a {
   color: #fff;
   margin-left: 1rem;
   text-decoration: none;
-  font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-
 /* --- Intro --- */
 .intro {
   padding: 2rem;
   max-width: 900px;
   margin: auto;
-  text-align: center;
 }
-
 
 /* --- Gallery --- */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 40px;
   padding: 2rem;
   max-width: 1800px;
   margin: auto;
@@ -99,10 +82,30 @@ nav a:hover {
 .gallery-item {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
   cursor: pointer;
 }
+.gallery-item1 {
+  
+  background: #0d231d;
+ 
+}
+
+.gallery-item2 {
+  background: #220f4b;
+ 
+}
+
+.gallery-item3 {
+  background: #121212;
+ 
+}
+.gallery-item4 {
+  background: #2A6478;
+ 
+}
+
 
 .gallery-item:hover {
   transform: translateY(-5px);
@@ -116,50 +119,67 @@ nav a:hover {
 
 .gallery-item .info {
   padding: 1rem;
-  font-size: clamp(0.9rem, 2vw, 1rem);
 }
-
-.gallery-item1 { background: #0d231d; }
-.gallery-item2 { background: #220f4b; }
-.gallery-item3 { background: #121212; }
-.gallery-item4 { background: #2A6478; }
-
 
 /* --- Project Details Section --- */
 #project-details {
   margin-top: 3rem;
 }
 
+/* Full-width project sections */
 .project {
   width: 100%;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  padding: 4rem 10vw;
+  border-radius: 0;             /* No rounded corners */
+   box-shadow: 0 10px 30px rgba(0,0,0,0.3);  /* Subtle shadow */
+  padding: 4rem 10vw;           /* Add space on the sides (10% viewport width) */
   margin: 0;
 }
 
 .projectdes1 {
-  background: #0d231d url("images/Caustics2.png") repeat center / 500px 500px;
-  background-blend-mode: overlay;
+  background-color: #0d231d;
+  background-image: url("images/Caustics2.png");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
   opacity: 0.98;
 }
 .projectdes2 {
-  background: #220f4b url("images/vaporpattern.jpg") repeat center / 500px 500px;
-  background-blend-mode: overlay;
+  background-color: #220f4b;
+  background-image: url("images/vaporpattern.jpg");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
   opacity: 0.78;
 }
+
 .projectdes3 {
-  background: #0f0f0f url("images/Pattern3.jpg") repeat center / 500px 500px;
-  background-blend-mode: overlay;
+  background-color: #0f0f0f;
+  background-image: url("images/Pattern3.jpg");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
   opacity: 0.98;
 }
+
 .projectdes4 {
-  background: #000 url("images/vaporpattern.jpg") repeat center / 500px 500px;
-  background-blend-mode: overlay;
+  background-color: #000000;
+  background-image: url("images/vaporpattern.jpg");
+  background-repeat: repeat; /* or "no-repeat" for a single large image */
+  background-size: 500px 500px; /* controls pattern size — try "cover" or "contain" */
+  background-position: center;
+  
+   background-blend-mode: overlay; /* try multiply, screen, or soft-light too */
   opacity: 1;
 }
 
 
-/* --- Project Content --- */
+/* Inner content layout */
 .project-content {
   display: flex;
   flex-wrap: wrap;
@@ -171,6 +191,7 @@ nav a:hover {
   flex: 1 1 300px;
   max-width: 500px;
   width: 100%;
+  border-radius: 0; /* Square edges */
 }
 
 .project-content .text {
@@ -178,21 +199,21 @@ nav a:hover {
 }
 
 .project-title {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #fff;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  font-size: 3rem;        /* Large size */
+  font-weight: 700;        /* Bold */
+  text-align: center;      /* Centered on the page */
+  margin-bottom: 2rem;     /* Space between title and image */
+  color: #ffffff;          /* Change if needed */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Optional depth */
 }
 
-
-/* --- Fullwidth Images --- */
 .fullwidth-image {
-  width: 90vw;
-  margin: 0 auto;
-  overflow: hidden;
   position: relative;
+  width: 80vw;
+  margin: 0 auto;
+   perspective: 1px;
+  overflow: hidden;
+  
 }
 
 .fullwidth-image img {
@@ -200,11 +221,14 @@ nav a:hover {
   height: auto;
   display: block;
   transition: transform 0.4s ease;
+   transform: translateZ(0);
+  will-change: transform;
 }
 
 .fullwidth-image img:hover {
-  transform: scale(1.02);
+  transform: scale(1.02); /* very subtle zoom */
 }
+
 
 .fullwidth-image .image-title {
   position: absolute;
@@ -212,35 +236,34 @@ nav a:hover {
   left: 20px;
   color: white;
   text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-size: 2rem;
 }
 
-
-/* --- Project Images --- */
 .project-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: center; /* center images in the row */
+  gap: 0.5rem;               /* space between images */
   margin-bottom: 2rem;
 }
 
 .project-images img {
-  width: min(600px, 90%);
+  width: 600px;            /* or any size you want */
   height: auto;
+  object-fit: cover;
   border-radius: 8px;
 }
 
-
-/* --- Text and Rows --- */
+/* Centered text row */
 .project-text {
+	
   text-align: center;
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 2rem auto;        /* center horizontally with spacing */
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: 1.1rem;
   line-height: 1.6;
-  color: #fff;
+  color: #ffffff;
 }
 
 .project-row {
@@ -256,6 +279,7 @@ nav a:hover {
   width: 60%;
   height: auto;
   object-fit: cover;
+  border-radius: 0; /* keep square corners */
 }
 
 .project-row iframe {
@@ -263,72 +287,38 @@ nav a:hover {
   aspect-ratio: 16 / 9;
   border: none;
 }
-
 .text-box {
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05); /* subtle contrast box */
   padding: 1.5rem;
+  border-radius: 0; /* no rounding */
   color: #fff;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
+/* Flip image/text sides every second row */
 .project-row:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-
-/* --- Responsive Layouts --- */
-@media (max-width: 1200px) {
-  .project { padding: 3rem 6vw; }
-  .gallery { gap: 1.5rem; }
-}
-
+/* Stack vertically on mobile */
 @media (max-width: 900px) {
   .project-row {
     flex-direction: column;
     padding: 1rem 4vw;
   }
 
-  .project-row img,
-  .project-row iframe,
-  .text-box {
+  .project-row img {
     width: 100%;
   }
 
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    margin: 0.5rem;
+  .text-box {
+    width: 100%;
   }
 }
 
-@media (max-width: 600px) {
-  .cv {
-    padding: 2rem 1rem;
-  }
 
-  .about-me {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile-pic {
-    width: 140px;
-    height: 140px;
-  }
-
-  .project-title {
-    font-size: 1.8rem;
-  }
-
-  .fullwidth-image {
-    width: 100vw;
-  }
-}
 
 
 /* --- Footer --- */
@@ -337,4 +327,5 @@ footer {
   color: #ccc;
   text-align: center;
   padding: 1rem;
+  margin-top: 0;
 }
