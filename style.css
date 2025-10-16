@@ -487,19 +487,25 @@ body, .cv, .about-me p, .text-box, .project-text {
   font-size: clamp(0.9rem, 1vw + 0.4rem, 1.1rem);
 }
 
-/* Make all text boxes responsive */
-.project-row .text-box {
-  flex: 1 1 300px;   /* allow shrinking and growing, min 300px */
-  max-width: 100%;   /* never overflow container */
-  box-sizing: border-box; /* ensure padding is included */
-}
-
-/* On tablets and smaller, stack text boxes vertically */
+/* Force project rows to stack properly on smaller screens */
 @media (max-width: 900px) {
+  .project-row {
+    flex-direction: column !important; /* override any row-reverse */
+    align-items: center;                /* center both image and text */
+    padding: 1rem 4vw;
+    gap: 1rem;                          /* spacing between stacked elements */
+  }
+
+  .project-row img,
   .project-row .text-box {
-    width: 100%;
-    padding: 1rem;   /* adjust padding for smaller screens */
-    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.1rem); /* dynamic font scaling */
+    width: 100% !important;            /* take full width */
+    max-width: 100% !important;        /* prevent overflow */
+    flex: none !important;             /* disable flex-basis overrides */
+    box-sizing: border-box;            /* include padding in width */
+  }
+
+  .text-box {
+    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.1rem); /* dynamic scaling */
   }
 }
 
