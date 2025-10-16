@@ -487,6 +487,22 @@ body, .cv, .about-me p, .text-box, .project-text {
   font-size: clamp(0.9rem, 1vw + 0.4rem, 1.1rem);
 }
 
+/* Make all text boxes responsive */
+.project-row .text-box {
+  flex: 1 1 300px;   /* allow shrinking and growing, min 300px */
+  max-width: 100%;   /* never overflow container */
+  box-sizing: border-box; /* ensure padding is included */
+}
+
+/* On tablets and smaller, stack text boxes vertically */
+@media (max-width: 900px) {
+  .project-row .text-box {
+    width: 100%;
+    padding: 1rem;   /* adjust padding for smaller screens */
+    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.1rem); /* dynamic font scaling */
+  }
+}
+
 /* Force project rows to stack properly on smaller screens */
 @media (max-width: 900px) {
   .project-row {
