@@ -465,5 +465,28 @@ footer {
   }
 }
 
+/* --- Dynamic font scaling --- */
+
+/* Body text */
+body, .cv, .about-me p, .text-box, .project-text {
+  font-size: clamp(0.9rem, 1vw + 0.5rem, 1.2rem);
+}
+
+/* Project titles */
+.project-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+/* Fullwidth image titles */
+.fullwidth-image .image-title {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+/* Gallery item info */
+.gallery-item .info {
+  font-size: clamp(0.9rem, 1vw + 0.4rem, 1.1rem);
+}
+
+
 
 
