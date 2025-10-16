@@ -303,3 +303,46 @@ footer {
   }
 }
 
+/* --- Fullwidth Images Fix --- */
+.fullwidth-image {
+  width: 80vw;
+  margin: 0 auto;
+  perspective: 1px;
+  overflow: hidden;
+}
+
+.fullwidth-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Responsive scaling for fullwidth images */
+@media (max-width: 1200px) {
+  .fullwidth-image {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .fullwidth-image {
+    width: 95vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .fullwidth-image {
+    width: 100vw;
+  }
+
+  .fullwidth-image .image-title {
+    font-size: 1.5rem;
+    left: 10px;
+    bottom: 10px;
+  }
+}
+
