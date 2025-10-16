@@ -442,3 +442,24 @@ footer {
   }
 }
 
+/* --- Responsive Project Images --- */
+.project-images img {
+  width: clamp(200px, 50%, 600px); /* min 200px, scales up to max 600px, stays at 50% in between */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* On small screens, stack images vertically */
+@media (max-width: 768px) {
+  .project-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-images img {
+    width: 90%;  /* almost full width on mobile */
+  }
+}
+
+
