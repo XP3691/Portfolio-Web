@@ -10,6 +10,14 @@ body {
 
 }
 
+.project {
+  display: none;
+}
+
+.project.active {
+  display: block;
+}
+
 .cv {
   max-width: 900px;
   margin: 0 auto;
