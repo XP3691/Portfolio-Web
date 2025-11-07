@@ -432,14 +432,25 @@
   </footer>
 
   <script>
-    // Smooth scroll when clicking gallery items
-    document.querySelectorAll('.gallery-item').forEach(item => {
-      item.addEventListener('click', () => {
-        const targetId = item.getAttribute('data-target');
-        const target = document.getElementById(targetId);
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
+    // Hide all projects initially
+  const projects = document.querySelectorAll('.project');
+  const items = document.querySelectorAll('.gallery-item');
+
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      const targetId = item.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+
+      // Hide all projects first
+      projects.forEach(p => p.classList.remove('active'));
+
+      // Show the selected one
+      target.classList.add('active');
+
+      // Smooth scroll to it
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+  });
   </script>
 </body>
 </html>
