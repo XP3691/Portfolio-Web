@@ -310,27 +310,7 @@ nav a:hover {
   flex-direction: row-reverse;
 }
 
-#scrollTopBtn {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  padding: 12px 16px;
-  font-size: 22px;
-  background: #222;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  z-index: 9999;
-}
 
-#scrollTopBtn.show {
-  opacity: 1;
-  pointer-events: auto;
-}
 
 /* Stack vertically on mobile */
 @media (max-width: 900px) {
@@ -555,6 +535,26 @@ body, .cv, .about-me p, .text-box, .project-text {
   }
 }
 
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 12px 16px;
+  font-size: 22px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
 
+#scrollTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 
